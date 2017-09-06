@@ -1,4 +1,7 @@
 <?php
+
+namespace bugayov\PrivateBuilder;
+
 /**
 * Вспомагательный класс для идентификации PHP-скрипта из редактора Sublime Text 3
 */
@@ -53,7 +56,7 @@ spl_autoload_register(function ($className) {
         require_once($fileName);
     } elseif (file_exists($fileNameClass)) {
         require_once($fileNameClass);
-    } else {
+    } else { /*
         print_r([
               '$message' => 'Отладочная информация'
             , '$className' => $className
@@ -62,6 +65,7 @@ spl_autoload_register(function ($className) {
             , '$fileNameClass' => $fileNameClass
             ]);
         throw new Exception('Файл класса не найден: ' . $className . PHP_EOL . PHP_EOL , 1);
+        */
     }
 });
 
