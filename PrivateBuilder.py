@@ -34,6 +34,13 @@ class MyBuildCurrentCodeCommand(sublime_plugin.TextCommand):
             count_cursors = len(self.view.sel())
             selected_text = self.view.substr(self.view.sel()[0])
             MyBuildCurrentCodeCommand.exec_mysql(file_name, count_cursors, selected_text)
+        elif (os.path.basename(file_name) == 'sql_client.json'
+            or
+            MyBuildCurrentCodeCommand.is_maskfile_valid(file_name, '.sql_server.json')
+            ):
+            count_cursors = len(self.view.sel())
+            selected_text = self.view.substr(self.view.sel()[0])
+            MyBuildCurrentCodeCommand.exec_mysql(file_name, count_cursors, selected_text)
     def is_maskfile_valid(file, mask):
         a = file.lower().split(mask.lower())
         l = len(a)

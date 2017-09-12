@@ -1,0 +1,4 @@
+[
+    { "keys": ["f5"], "command": "my_build_current_code" },
+    { "keys": ["super+shift+f5"], "command": "my_build_php_cs_fixer" },
+]
