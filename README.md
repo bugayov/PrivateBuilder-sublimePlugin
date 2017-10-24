@@ -36,3 +36,4 @@ insert insert this code into `Default (Linux).sublime-keymap` or `Default (Windo
     { "keys": ["ctrl+shift+f5"], "command": "my_build_php_cs_fixer" },
 ]
 ```
+Я пока что исключаю из keymap сочетание __ctrl+shift+f5__, т.к.оно мешает xdebug.

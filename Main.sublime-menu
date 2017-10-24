@@ -1,0 +1,20 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "id": "end_private_builder",
+                "caption": "PrivateBuilder",
+                "children":
+                [
+                    {
+                        "caption": "php_cs_fixer",
+                        "command": "my_build_php_cs_fixer"
+                    }
+                ]
+
+            }
+        ]
+    }
+]
